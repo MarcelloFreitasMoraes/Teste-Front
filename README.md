@@ -1,8 +1,8 @@
-# PROJETO HARRY POTTER
+# TESTE_FRONTEND
 [![NPM](https://img.shields.io/badge/license-MIT-green)](https://github.com/MarcelloFreitasMoraes/Teste-Front.git)
 
 # SOBRE O PROJETO
-O projeto harry potter é um projeto Front-End desenvolvido em NEXT.js.
+O projeto Mapa do Brasil com Temperaturas é um projeto Front-End desenvolvido em NEXT.js.
 O projeto foi um desafio proposto com proposito para testar minhas habilidades de desenvolvimento de uma interface funcional.
 
 A aplicação consiste em 2 paginas:
