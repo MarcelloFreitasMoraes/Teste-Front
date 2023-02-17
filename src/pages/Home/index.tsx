@@ -38,7 +38,7 @@ export default function Home() {
     };
 
     return (
-        <Fragment>
+        <S.Container>
             <Head>
                 <title>Mapa Brasil | Home</title>
                 <meta name="description" content="Teste Projeto" />
@@ -48,7 +48,7 @@ export default function Home() {
             <S.Content>
                 <div onClick={() => setOpen(false)}>
                     <TypographicComponent title={"Temperaturas Brasil"} large />
-                    <MapaBR data={data} onStates={onStates} />{" "}
+                    <MapaBR data={data} onStates={onStates} />
                     {open && resposta && (
                         <S.CardContainer>
                             <CardComponent data={resposta} />
@@ -56,6 +56,6 @@ export default function Home() {
                     )}
                 </div>
             </S.Content>
-        </Fragment>
+        </S.Container>
     );
 }

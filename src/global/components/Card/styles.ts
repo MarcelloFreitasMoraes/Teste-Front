@@ -12,6 +12,7 @@ export const Border = styled.div`
   width: 20rem; 
   text-align: center;
   background-color: var(--light);
+  
   & > p {
     margin-top: 10px;
     justify-content: center;
