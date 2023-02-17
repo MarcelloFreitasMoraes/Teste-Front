@@ -1,38 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PROJETO HARRY POTTER
+[![NPM](https://img.shields.io/badge/license-MIT-green)](https://github.com/MarcelloFreitasMoraes/Teste-Front.git)
 
-## Getting Started
+# SOBRE O PROJETO
+O projeto harry potter é um projeto Front-End desenvolvido em NEXT.js.
+O projeto foi um desafio proposto com proposito para testar minhas habilidades de desenvolvimento de uma interface funcional.
 
-First, run the development server:
+A aplicação consiste em 2 paginas:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<li>Pagina inicial</li>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<li>Pagina com Mapa e Temperaturas</li>
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<br/>
+<i>A pagina com descrição do Projeto.</i>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+O projeto foi feito com base na API: https://temperatura-brasil-default-rtdb.firebaseio.com/state.json/
+<i>Api Criada por mim.</i>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<strong>A aplicação pode ser executada em qualquer resolução desktop.</strong>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<i>O projeto também conta com testes unitarios simples de renderização de componentes utilizados.</i>
 
-## Learn More
+# Tecnologias utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+<li>NextJS</li>
+<li>ReactJS</li>
+<li>TypesScript</li>
+<li>Axios</li>
+<li>Styled-Components</li>
+<li>Firebase</li>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Como executar o projeto
+ ### pré-requisitos: Node 16.16 ou superior
+ 
+ ```bash
+ #clonar repositório 
+ https://github.com/MarcelloFreitasMoraes/Teste-Front.git
+ 
+ #entrar na pasta do projeto
+ cd Teste-Front
+ 
+ #executar o projeto
+ 1 - npm install
+ 2 - npm run dev
+ ```
+ ## Fotos do Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<div align="center">
+  <p>Inicial</p>
+<img src="https://scontent.fcgh24-1.fna.fbcdn.net/v/t39.30808-6/331274869_646492107282066_3040790655248052817_n.jpg?stp=dst-jpg_s960x960&_nc_cat=110&ccb=1-7&_nc_sid=0debeb&_nc_ohc=zFPxBSVUKqoAX8z2p6y&_nc_ht=scontent.fcgh24-1.fna&oh=00_AfBH3kep-tKfDapMiuPAv5UrIARBcJoZYIMQ8dweQWwScQ&oe=63F44624" width="700px" />
+</div>
+<br/>
 
-## Deploy on Vercel
+<div align="center">
+  <p>Pagina com Mapa e Temperaturas</p>
+<img src="https://scontent.fcgh24-1.fna.fbcdn.net/v/t39.30808-6/331335682_520145693588208_7270830109235049428_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=0debeb&_nc_ohc=DkdpO97tGUYAX-mibf0&tn=V9A8v_UZ6IkVxG3G&_nc_ht=scontent.fcgh24-1.fna&oh=00_AfDqbQoaftoysqiNeniEwfd8Q14Pu4HXd6XyUuDaYeDrmw&oe=63F4B936" width="700px" />
+</div>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+ <br/>
+ 
+ # autor
+ ### Marcelo Moraes
+ 

@@ -2,9 +2,10 @@ import MapaBR from "@/global/utils/mapaBrasil";
 import { CardComponent } from "@/global/components/Card";
 import axios from "axios";
 import Head from "next/head";
-import { Fragment, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import * as S from "@/styles/styles";
 import { TypographicComponent } from "@/global/components/Typographic";
+import { API } from "@/global/config";
 
 export default function Home() {
     const [data, setData] = useState<unknown | ArrayLike<unknown>>([]);
@@ -12,8 +13,7 @@ export default function Home() {
     const [open, setOpen] = useState(false);
 
     useEffect(() => {
-        axios
-            .get(`https://temperatura-brasil-default-rtdb.firebaseio.com/state.json/`)
+        API.get(`/state.json/`)
             .then((response) => {
                 setData(Object.entries(response.data));
                 setOpen(true);
@@ -24,10 +24,7 @@ export default function Home() {
     }, []);
 
     const onStates = (id: string) => {
-        axios
-            .get(
-                `https://temperatura-brasil-default-rtdb.firebaseio.com/state/${id}.json/`
-            )
+        API.get(`/state/${id}.json/`)
             .then((response) => {
                 setResposta(response.data);
                 setOpen(true);
