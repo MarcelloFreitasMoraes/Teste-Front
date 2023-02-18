@@ -8,7 +8,7 @@ export interface Data {
 interface CardProps<T = any> {
     data: T
     onStates?: (prev: string) => void
-    setOpen?: React.Dispatch<SetStateAction<boolean>>;
+    setOpen?: React.Dispatch<SetStateAction<boolean>> | undefined;
 }
 
 export interface IcontentProps<T = any> {

@@ -1,8 +1,7 @@
 import MapaBR from "@/global/utils/mapaBrasil";
 import { CardComponent } from "@/global/components/Card";
-import axios from "axios";
 import Head from "next/head";
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import * as S from "@/styles/styles";
 import { TypographicComponent } from "@/global/components/Typographic";
 import { API } from "@/global/config";
@@ -43,15 +42,15 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <S.Content>
-                <div onClick={() => setOpen(false)}>
+                <div>
                     <TypographicComponent title={"Temperaturas Brasil"} large />
                     <MapaBR data={data} onStates={onStates} />
-                    {open && resposta && (
-                        <S.CardContainer>
-                            <CardComponent data={resposta} />
-                        </S.CardContainer>
-                    )}
                 </div>
+                {open && resposta && (
+                    <S.CardContainer>
+                        <CardComponent data={resposta} />
+                    </S.CardContainer>
+                )}
             </S.Content>
         </S.Container>
     );
